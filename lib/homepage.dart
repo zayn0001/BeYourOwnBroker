@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:micetalks/components/cardblock.dart';
 import 'package:micetalks/provider/data.dart';
 import 'package:provider/provider.dart';
@@ -23,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text(constants.title),
+        title: Text(constants.title, style: GoogleFonts.openSans()),
       ),
       body: Consumer<AllCards>(
         builder: (context, allCards, _) {

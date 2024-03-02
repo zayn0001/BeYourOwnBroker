@@ -7,6 +7,7 @@ import 'package:micetalks/homepage.dart';
 import 'package:provider/provider.dart';
 import 'provider/data.dart';
 import "package:micetalks/provider/constants.dart" as constants;
+import 'package:google_fonts/google_fonts.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,7 +28,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: constants.title,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        textTheme: GoogleFonts.openSansTextTheme(),
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color.fromARGB(9, 10, 108, 54)),
         useMaterial3: true,
       ),
       home: const MyHomePage(),
