@@ -23107,7 +23107,7 @@ A.aa9.prototype={
 $1(a){var s=A.dO().b
 if(s==null)s=null
 else{s=s.canvasKitBaseUrl
-if(s==null)s=null}return(s==null?"https://www.gstatic.com/flutter-canvaskit/04817c99c9fd4956f27505204f7e344335810aed/":s)+a},
+if(s==null)s=null}return(s==null?"https://www.gstatic.com/flutter-canvaskit/a5c24f538d05aaf66f7972fb23959d8cafb9f95a/":s)+a},
 $S:40}
 A.aam.prototype={
 $1(a){this.a.remove()
@@ -67684,7 +67684,7 @@ qZ(a){return this.UH(a)},
 UH(a){var s=0,r=A.R(t.i),q,p
 var $async$qZ=A.S(function(b,c){if(b===1)return A.O(c,r)
 while(true)switch(s){case 0:s=3
-return A.V(A.azU(A.fa("https://googlefinance.onrender.com/MUTF_IN/"+a,0,null)),$async$qZ)
+return A.V(A.azU(A.fa("https://googlefinance-vercel-7kgw13m1p-mishals-projects-370e1800.vercel.app/MUTF_IN/"+a,0,null)),$async$qZ)
 case 3:p=c
 q=J.bi(B.bM.JH(0,A.azD(A.axC(p.e).c.a.i(0,"charset")).dM(0,p.w),null),"nav")
 s=1
@@ -67696,28 +67696,30 @@ for(s=m.length-1,r="",q=0;s>=0;--s,++q){r=m[s]+r
 if(q!==0&&B.f.bS(q,2)===0&&s!==0)r=","+r}return r+l},
 mv(){var s=0,r=A.R(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f,e,d
 var $async$mv=A.S(function(a,b){if(a===1)return A.O(b,r)
-while(true)switch(s){case 0:g=$.d1
-f=(g==null?$.d1=$.iL():g).hD("[DEFAULT]")
-A.dB(f,$.fN(),!0)
-g=A.as2(new A.dV(f))
-p=g.c
-if(p==null){p=g.e
-p=g.c=A.ahx().zb(g.d,p)}s=2
-return A.V(A.awj(g,p.oA("investments")).qd(0),$async$mv)
-case 2:g=b.gzs(),p=g.length,o=q.a,n=0
-case 3:if(!(n<g.length)){s=5
-break}m=g[n]
-l=m.b
-k=l.a3(0,"ticker")
-j=m.a
+while(true)switch(s){case 0:f=q.a
+B.b.I(f)
+p=$.d1
+o=(p==null?$.d1=$.iL():p).hD("[DEFAULT]")
+A.dB(o,$.fN(),!0)
+p=A.as2(new A.dV(o))
+n=p.c
+if(n==null){n=p.e
+n=p.c=A.ahx().zb(p.d,n)}s=2
+return A.V(A.awj(p,n.oA("investments")).qd(0),$async$mv)
+case 2:p=b.gzs(),n=p.length,m=0
+case 3:if(!(m<p.length)){s=5
+break}l=p[m]
+k=l.b
+j=k.a3(0,"ticker")
+i=l.a
 e=A
 d=B.c
 s=6
-return A.V(q.qZ(A.l8(k,j)),$async$mv)
-case 6:i=e.af3(d.N(b*A.l8(l.a3(0,"units"),j),2))
-h=A.af3(B.c.N(i-A.l8(l.a3(0,"spent"),j),2))
-o.push(new A.rR(A.l8(l.a3(0,"mfname"),j),J.agb(A.l8(l.a3(0,"units"),j)),q.wv(J.agb(A.l8(l.a3(0,"spent"),j))),q.wv(i),q.wv(h),$.aM()))
-case 4:g.length===p||(0,A.G)(g),++n
+return A.V(q.qZ(A.l8(j,i)),$async$mv)
+case 6:h=e.af3(d.N(b*A.l8(k.a3(0,"units"),i),2))
+g=A.af3(B.c.N(h-A.l8(k.a3(0,"spent"),i),2))
+f.push(new A.rR(A.l8(k.a3(0,"mfname"),i),J.agb(A.l8(k.a3(0,"units"),i)),q.wv(J.agb(A.l8(k.a3(0,"spent"),i))),q.wv(h),q.wv(g),$.aM()))
+case 4:p.length===n||(0,A.G)(p),++m
 s=3
 break
 case 5:q.af()
