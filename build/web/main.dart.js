@@ -67684,7 +67684,7 @@ qZ(a){return this.UH(a)},
 UH(a){var s=0,r=A.R(t.i),q,p
 var $async$qZ=A.S(function(b,c){if(b===1)return A.O(c,r)
 while(true)switch(s){case 0:s=3
-return A.V(A.azU(A.fa("https://googlefinance-vercel-7kgw13m1p-mishals-projects-370e1800.vercel.app/MUTF_IN/"+a,0,null)),$async$qZ)
+return A.V(A.azU(A.fa("https://googlefinance-vercel.vercel.app/MUTF_IN/"+a,0,null)),$async$qZ)
 case 3:p=c
 q=J.bi(B.bM.JH(0,A.azD(A.axC(p.e).c.a.i(0,"charset")).dM(0,p.w),null),"nav")
 s=1
