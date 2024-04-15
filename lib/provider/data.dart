@@ -40,6 +40,7 @@ class AllCards extends ChangeNotifier {
 
   Future<void> fetchCardsFromFirestore() async {
     _cards.clear();
+    notifyListeners();
     QuerySnapshot<Map<String, dynamic>> snapshot =
         await FirebaseFirestore.instance.collection('investments').get();
     for (var data in snapshot.docs) {

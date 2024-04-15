@@ -67698,6 +67698,7 @@ mv(){var s=0,r=A.R(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f,e,d
 var $async$mv=A.S(function(a,b){if(a===1)return A.O(b,r)
 while(true)switch(s){case 0:f=q.a
 B.b.I(f)
+q.af()
 p=$.d1
 o=(p==null?$.d1=$.iL():p).hD("[DEFAULT]")
 A.dB(o,$.fN(),!0)
