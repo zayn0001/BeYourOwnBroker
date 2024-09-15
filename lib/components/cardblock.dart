@@ -8,47 +8,44 @@ class CardBlock extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(
-          horizontal: 10, vertical: 10), // Horizontal margin
-      child: Card(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            ListTile(
-              leading: const Icon(Icons.album),
-              title: Text(card.mfname),
-              subtitle: Column(
-                children: [
-                  Row(
-                    children: [Text("${card.units}"), const Text(" Units")],
-                  ),
-                ],
-              ),
+    return Card(
+      margin: const EdgeInsets.all(12),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          ListTile(
+            leading: const Icon(Icons.album),
+            title: Text(card.mfname),
+            subtitle: Column(
+              children: [
+                Row(
+                  children: [Text("${card.units}"), const Text(" Units")],
+                ),
+              ],
             ),
-            ListTile(
-              title: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [const Text('Spent'), Text('Rs ${card.spent}')],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text('Current Valuation:'),
-                      Text('Rs ${card.currentValuation}')
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [const Text('Profit'), Text('Rs ${card.profit}')],
-                  ),
-                ],
-              ),
+          ),
+          ListTile(
+            title: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [const Text('Spent'), Text('Rs ${card.spent}')],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text('Current Valuation:'),
+                    Text('Rs ${card.currentValuation}')
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [const Text('Profit'), Text('Rs ${card.profit}')],
+                ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
