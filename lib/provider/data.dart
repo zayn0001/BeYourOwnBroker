@@ -18,7 +18,7 @@ class AllCards extends ChangeNotifier {
     return curnav;
   }
 
-  String _convertToIndianCurrencyFormat(double amount) {
+  String convertToIndianCurrencyFormat(double amount) {
     String amountStr = amount.toStringAsFixed(2);
     bool hasDecimal = amountStr.contains('.');
     List<String> parts = amountStr.split('.');
@@ -50,9 +50,9 @@ class AllCards extends ChangeNotifier {
       var cardModel = CardModel(
         mfname: data['mfname'],
         units: data['units'].toDouble(),
-        spent: _convertToIndianCurrencyFormat(data['spent'].toDouble()),
-        currentValuation: _convertToIndianCurrencyFormat(curval.toDouble()),
-        profit: _convertToIndianCurrencyFormat(profit.toDouble()),
+        spent: convertToIndianCurrencyFormat(data['spent'].toDouble()),
+        currentValuation: convertToIndianCurrencyFormat(curval.toDouble()),
+        profit: convertToIndianCurrencyFormat(profit.toDouble()),
       );
 
       _cards.add(cardModel);

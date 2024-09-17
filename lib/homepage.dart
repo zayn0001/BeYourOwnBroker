@@ -47,10 +47,73 @@ class _MyHomePageState extends State<MyHomePage> {
                           crudservice.createInvestment(context, form),
                     );
                   }
-                  if (index == allCards.cards.length + 1) {
+                  if (index == allCards.cards.length + 2) {
                     return const SizedBox(height: 80);
                   }
-                  CardModel card = allCards.cards[index - 1];
+                  if (index == 1) {
+                    String totalSpent = AllCards()
+                        .convertToIndianCurrencyFormat(allCards.cards.fold(
+                            0.0,
+                            (sum, item) =>
+                                sum +
+                                double.parse(item.spent.replaceAll(",", ""))));
+
+                    String totalValuation = AllCards()
+                        .convertToIndianCurrencyFormat(allCards.cards.fold(
+                            0.0,
+                            (sum, item) =>
+                                sum +
+                                double.parse(item.currentValuation
+                                    .replaceAll(",", ""))));
+
+                    String totalProfit = AllCards()
+                        .convertToIndianCurrencyFormat(allCards.cards.fold(
+                            0.0,
+                            (sum, item) =>
+                                sum +
+                                double.parse(item.profit.replaceAll(",", ""))));
+
+                    return Card(
+                      color: const Color.fromARGB(255, 191, 204, 226),
+                      margin: const EdgeInsets.all(12),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          ListTile(
+                              title: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Text('Total Spent'),
+                                  Text('Rs $totalSpent')
+                                ],
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Text('Current Total Valuation'),
+                                  Text('Rs $totalValuation')
+                                ],
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Text('Total Profit'),
+                                  Text('Rs $totalProfit')
+                                ],
+                              ),
+                            ],
+                          ))
+                        ],
+                      ),
+                    );
+                  }
+
+                  CardModel card = allCards.cards[index - 2];
                   return CardBlock(card: card);
                 },
               ),
